@@ -7,13 +7,13 @@ const listingSchema = new Schema({
         required: true,
     },
     description: String,
-    image:  {
+    image:{
           type: String,
           default: "https://media.istockphoto.com/id/1351763219/photo/crystal-cove-state-park-sky-fire.webp?b=1&s=170667a&w=0&k=20&c=mJEFZ68eUauueOHxlGRbBQZ-F0J-FwMXLWGqs5a0LAk=",
           set: (v) => v === "" ?
           "https://media.istockphoto.com/id/1351763219/photo/crystal-cove-state-park-sky-fire.webp?b=1&s=170667a&w=0&k=20&c=mJEFZ68eUauueOHxlGRbBQZ-F0J-FwMXLWGqs5a0LAk=" 
           : v,
-          required: true,
+        //   required: true,
       },
     price: Number,
     location: String,
